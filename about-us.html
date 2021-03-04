@@ -1,15 +1,22 @@
 <!DOCTYPE HTML>
 <!--
-	Topart Trading by HTML5 UP
+	Topart Trading UK ltd
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
 <head>
     <title>Topart Trading UK Ltd</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
 </head>
 <body class="is-preload right-sidebar">
 <div id="page-wrapper">
@@ -46,38 +53,14 @@
                         <!-- Content -->
                         <article>
 
-                            <h2>Right Sidebar</h2>
+                            <h2>Why Choose us?</h2>
+                            <h3>Best Customer Service</h3>
+                            <p>We endeavour to provide you the best customer service at any stage in the process of buying, and any concerns thereafter.
+                                We pride ourselves on the service we offer to wholesalers, retailers and industrial businesses. </p>
 
-                            <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-                                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-                                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-                                consequat etiam lorem ipsum dolor sit amet nullam.</p>
-
-                            <h3>More intriguing information</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at
-                                tempus
-                                justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque
-                                lorem felis,
-                                ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum
-                                imperdiet
-                                vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis
-                                tempor.
-                                Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam
-                                convallis
-                                rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper
-                                non sapien.
-                                Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-                                Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
-
-                            <p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
-                                quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec
-                                arcu.
-                                Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris
-                                dolor urna,
-                                fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium
-                                pretium.
-                                Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-                                Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
+                            <h3>Convenient Pricing</h3>
+                            <p>You will find our trade pricing scheme quite beneficial. For merchant, wholesale or pallet pricing.
+                                Our unique pricing arrangements and purchasing power enable us to sell at extremely competitive trade prices,</p>
 
                         </article>
 
@@ -88,26 +71,34 @@
 
                         <!-- Sidebar -->
                         <section>
-                            <h3>Subheading</h3>
-                            <p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-                                Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-                                Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-                                consequat etiam.</p>
-                            <footer>
-                                <a href="#" class="button icon solid fa-info-circle">Find out more</a>
-                            </footer>
+                            <h3>Location</h3>
+                            <div id="map"></div>
+                            <script>
+								      function initMap() {
+								        var uluru = {lat: 51.48505, lng: -0.36922};
+								        var map = new google.maps.Map(document.getElementById('map'), {
+								          zoom: 10,
+								          center: uluru
+								        });
+								        var marker = new google.maps.Marker({
+								          position: uluru,
+								          map: map
+								        });
+								      }
+								    </script>
+                            <script async defer
+                                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKM1FzH82yT5m5UAhij5WM800PVXSPBUQ&callback=initMap">
+                            </script>
                         </section>
 
                         <section>
-                            <h3>Subheading</h3>
-                            <ul class="style2">
-                                <li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-                                <li><a href="#">Ornare in hendrerit in lectus</a></li>
-                                <li><a href="#">Semper mod quis eget mi dolore</a></li>
-                                <li><a href="#">Quam turpis feugiat sit dolor</a></li>
-                                <li><a href="#">Amet ornare in hendrerit in lectus</a></li>
-                                <li><a href="#">Semper mod quisturpis nisi</a></li>
-                            </ul>
+                            <h3>Contact US</h3>
+                            <dt>Phone</dt>
+                            <dd>+44 7460914122</dd>
+                            <dt>Email</dt>
+                            <dd>
+                                <a href="mailto:ttul2306@gmail.com?Subject=Inquiry">ttul2306@gmail.com</a>
+                            </dd>
                         </section>
 
                     </div>
@@ -116,88 +107,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <div id="footer-wrapper">
-        <footer id="footer" class="container">
-            <div class="row">
-                <div class="col-3 col-6-medium col-12-small">
-
-                    <!-- Links -->
-                    <section class="widget links">
-                        <h3>Random Stuff</h3>
-                        <ul class="style2">
-                            <li><a href="#">Etiam feugiat condimentum</a></li>
-                            <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                            <li><a href="#">Sed porttitor cras in erat nec</a></li>
-                            <li><a href="#">Felis varius pellentesque potenti</a></li>
-                            <li><a href="#">Nullam scelerisque blandit leo</a></li>
-                        </ul>
-                    </section>
-
-                </div>
-                <div class="col-3 col-6-medium col-12-small">
-
-                    <!-- Links -->
-                    <section class="widget links">
-                        <h3>Random Stuff</h3>
-                        <ul class="style2">
-                            <li><a href="#">Etiam feugiat condimentum</a></li>
-                            <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                            <li><a href="#">Sed porttitor cras in erat nec</a></li>
-                            <li><a href="#">Felis varius pellentesque potenti</a></li>
-                            <li><a href="#">Nullam scelerisque blandit leo</a></li>
-                        </ul>
-                    </section>
-
-                </div>
-                <div class="col-3 col-6-medium col-12-small">
-
-                    <!-- Links -->
-                    <section class="widget links">
-                        <h3>Random Stuff</h3>
-                        <ul class="style2">
-                            <li><a href="#">Etiam feugiat condimentum</a></li>
-                            <li><a href="#">Aliquam imperdiet suscipit odio</a></li>
-                            <li><a href="#">Sed porttitor cras in erat nec</a></li>
-                            <li><a href="#">Felis varius pellentesque potenti</a></li>
-                            <li><a href="#">Nullam scelerisque blandit leo</a></li>
-                        </ul>
-                    </section>
-
-                </div>
-                <div class="col-3 col-6-medium col-12-small">
-
-                    <!-- Contact -->
-                    <section class="widget contact">
-                        <h3>Contact Us</h3>
-                        <ul>
-                            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
-                            </li>
-                            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
-                            </li>
-                            <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-                            <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a>
-                            </li>
-                        </ul>
-                        <p>1234 Fictional Road<br/>
-                            Nashville, TN 00000<br/>
-                            (800) 555-0000</p>
-                    </section>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div id="copyright">
-                        <ul class="menu">
-                            <li>&copy; Untitled. All rights reserved</li>
-                            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </div>
 
 </div>
